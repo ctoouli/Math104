@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Math 104</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
   </head>
 
@@ -13,29 +15,36 @@
       <h1 class="ui header">Math 104 Equations</h1>
     </div>
 
-    <div class="ui text container">
-      <div class="ui main text container">
-        <h2 class="ui header">Quadratic Equation</h2>
-      </div>
-      <div class="ui form">
-        <div class="fields">
-          <div class="field">
-            <label>ax<sup>2</sup></label>
-            <input type="text" placeholder="a">
+    <div class="quadraticEquation">
+      <div class="ui text container">
+        <div class="ui main text container">
+          <h2 class="ui header">Quadratic Equation</h2>
+        </div>
+        <div class="quadraticEquationForm">
+          <div class="ui form">
+            <div class="fields">
+              <div class="field">
+                <label>ax<sup>2</sup></label>
+                <input type="text" placeholder="a" id="aQuadratic">
+              </div>
+              <div class="field">
+                <label>bx</label>
+                <input type="text" placeholder="b" id="bQuadratic">
+              </div>
+              <div class="field">
+                <label>c</label>
+                <input type="text" placeholder="c" id="cQuadratic">
+              </div>
+            </div>
           </div>
-          <div class="field">
-            <label>bx</label>
-            <input type="text" placeholder="b">
-          </div>
-          <div class="field">
-            <label>c</label>
-            <input type="text" placeholder="c">
-          </div>
+          <button class="ui button" onclick="quadraticEquation()">
+            Calculate
+          </button>
+          <div id="answer" class="quadraticEquationAnswer"></div>
         </div>
       </div>
     </div>
 
-<h1>test</h1>
 
   </body>
 </html>
